@@ -1,0 +1,5 @@
+We used hash table and linked list for our datastructures. We maintain an array of partition structs, where each partition has a hash table of key lists(linked lists) that hash to the same key. each key list has a linked list of values.
+
+we convert these linked lists into arrays before sort and use qsort for the sorting of both keys and values.
+
+All the 25 test cases(with timeout checks in place) passed with this code..

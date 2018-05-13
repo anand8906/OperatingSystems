@@ -1,0 +1,11 @@
+The following files were modified to add a system call.
+
+xv6/user/usys.S -- added the system call getreadcount
+xv6/kernel/sysproc.c -- added implementation of sys_getreadcount that returns the counter on number of calls to read.
+xv6/kernel/trap.c -- declare and initialize global variables for read count and spinlock
+xv6/kernel/sysfile.c -- added code to sys_read to increment read counter for every call to it.
+xv6/kernel/syscall.c --  added handler for getreadcount system call.
+xv6/kernel/defs.h -- declare read counter and spinlock with extern so that these global variables can be made available in files that include defs.h
+xv6/kernel/sysfunc.h -- added signature of handler for getreadcount system call.
+xv6/include/syscall.h -- added a macro that defines system call number for getreadcount.
+xv6/user/getreadcounttest -- a test program that tests getreadcount for 5 read calls.  

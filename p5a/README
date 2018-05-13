@@ -1,0 +1,12 @@
+We created functions that capture each kind of inconsistencies mentioned in the assignment description. 
+    test_inode_unallocated_or_valid_type;
+    test_bad_addr_inode(sb);
+    test_root_dir_inode(sb, addr);
+    test_current_directory_points_to_itself(sb, addr);
+    test_used_addr_marked_free(sb,addr);
+    test_blocks_marked_and_not_used(sb, addr);
+    test_direct_indirect_address_more_than_once(sb, addr);
+    test_inode_ref_count(sb, addr);
+
+We used mmap to read the image input and used the data structure definitions to extrace the data needed from image file. We used this data to check for inconsistencies if any with respect to inodes, bitmaps etc.. 
+And the code passed all the 28 test cases.

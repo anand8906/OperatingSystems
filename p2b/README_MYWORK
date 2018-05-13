@@ -1,0 +1,5 @@
+Added two system calls settickets, getpinfo
+
+Updated scheduler code and implemented lottery scheduling. Also implemented pseudo random generator
+
+Implemented code that gives the data required to plot tickets vs ticks of the processes. Coded such that processes 1,2,3 have tickets 10, 20, 30 respectively. Plotted the graph as histogram.

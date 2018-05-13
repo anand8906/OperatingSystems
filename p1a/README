@@ -1,0 +1,16 @@
+my-cat : 
+
+used fgets to read into a buffer of 1024 and printf to output on stdout.
+
+my-grep :
+
+using getline to allow for lines of arbitrary length, using string.h to check if the serch word exists in every line.
+
+my-zip :
+
+reading the file as in above examples and then counting continuos row of each character maintaining a prev. if curr character is same as previous character in the stream, then increment the count, else write to stdout using fwrite, integers as sizeof(int) bytes and character as sizeof(character) bytes.
+
+my-unzip :
+
+reading the binary file using fread first for the count of character and next for the actual character and writing the character 'count' times to stdout.
+ 

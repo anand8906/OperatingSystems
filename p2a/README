@@ -1,0 +1,8 @@
+The program consists of four different conditional blocks,
+
+1) batch mode with redirection.
+2) batch mode without redirection.
+3) interactive mode with redirection.
+4) interactive mode without redirection.
+
+For each command that is read from file in batch mode, or stdin in interactive mode, we identify the category to which the command belongs to and execute the corresponding block of code.The first non whitespace token of the command is first identified as a built in command or an existing binary, then execv for binaries and method calls for built in commands are made. Used dup and dup2 for redirection. 
