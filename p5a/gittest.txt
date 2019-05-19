@@ -1,2 +1,3 @@
 commit-1 from checkedout master
 commit-2 from checkedout master
+commit-5 from checkedout master after two commits on mybranch since last checkout
